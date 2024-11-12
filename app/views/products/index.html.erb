@@ -6,4 +6,9 @@
 
 <div id="products">
   <%= render partial: "product", collection: @products %>
+  <%== pagy_nav(@pagy) %>
+  <!-- you can use bootstrap styling if you wish, or tailwind 
+    https://ddnexus.github.io/pagy/docs/extras/bootstrap/
+    https://ddnexus.github.io/pagy/docs/extras/tailwind/
+  -->
 </div>
